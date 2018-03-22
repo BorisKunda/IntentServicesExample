@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         finish();//IMMEDIATELY CLOSES ACTIVITY SO  THERE WILL BE NO VISIBLE CLUE THAT THERE SERVICE RUNS IN BACKGROUND
 
 
-       //stopService(new Intent(this, MyIntentService.class));// -> STOPS SERVICE
+        //stopService(new Intent(this, MyIntentService.class));// -> STOPS SERVICE
 
 
     }
