@@ -4,6 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+//NOTES:
+
+//Remember service needs to be declared in AndroidManifest.xml
+//" android:exported = "  in manifest -> The purpose of the "exported" is to let other apps have access to a service.
+//A service is only started once, no matter how often you call the startService() method
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         finish();//IMMEDIATELY CLOSES ACTIVITY SO  THERE WILL BE NO VISIBLE CLUE THAT THERE SERVICE RUNS IN BACKGROUND
 
 
-
+       //stopService(new Intent(this, MyIntentService.class));// -> STOPS SERVICE
 
 
     }
