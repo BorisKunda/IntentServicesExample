@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 
+//extending from IntentService allows service to run on different thread
 public class MyIntentService extends IntentService {
 
 
